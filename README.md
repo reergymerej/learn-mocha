@@ -21,14 +21,17 @@ This adds it to package.json under "devDependencies".
 Set up an npm script in package.json to test using the installed Mocha.
 
     "scripts": {
-        "test": "node_modules/.bin/mocha app.js"
+        "test": "node_modules/.bin/mocha"
     },
 
 Add `test/test.js` to your project.  This is where Mocha looks for tests by default.
 
-Now, running this from the console will execute the test cases in `test/test.js` against `app.js`.
+Now, running this from the console will execute the test cases in `test/test.js`.
 
     npm test
+
+### Writing Tests
+
 
 
 ### References
