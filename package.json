@@ -1,0 +1,25 @@
+{
+  "name": "learn-mocha",
+  "version": "0.0.0",
+  "description": "This is a simple project to learn about [Mocha](http://visionmedia.github.io/mocha/).",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://reergymerej@github.com/reergymerej/learn-mocha.git"
+  },
+  "author": "Jeremy Greer <jeremy.greer.atl@gmail.com> (http://jeremygreer.herokuapp.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reergymerej/learn-mocha/issues"
+  },
+  "homepage": "https://github.com/reergymerej/learn-mocha",
+  "devDependencies": {
+    "mocha": "~1.19.0"
+  }
+}
