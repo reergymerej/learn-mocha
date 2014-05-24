@@ -26,11 +26,11 @@ Set up an npm script in package.json to test using the installed Mocha.
 
 Add `test/test.js` to your project.  This is [where Mocha looks for tests](http://visionmedia.github.io/mocha/#best-practices) by default.
 
+If no file is specified when calling mocha, all *.js files in the ./test directory will be run.  You can make it search recursively through the test dir with `--recursive`.
+
 Now, running this from the console will execute the test cases in `./test`.
 
     npm test
-
-If no file is specified when calling mocha, all *.js files in the ./test directory will be run.  You can make it search recursively through the test dir with `--recursive`.
 
 This executes the "test" defined in [package.json's "scripts"](https://www.npmjs.org/doc/misc/npm-scripts.html).
 
@@ -81,7 +81,7 @@ describe.only('only this suite will run', function () {
 
 You just get the dot-matrix reporter by default.  You can specify others with `--reporter foo`.  Add this to the package.json "test" entry.  You can see the available reporters with
 
-`./node_modules/.bin/mocha --reporters
+`./node_modules/.bin/mocha --reporters`
 
 ### Watch Files for Changes
 
