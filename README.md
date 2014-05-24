@@ -46,6 +46,26 @@ it('should work asynchronously', function (done) {
 });
 ```
 
+If you're testing something that returns a promise, use
+
+```javascript
+it('should work asynchronously', function () {
+    return stuff().should.eventually.be(true);
+});
+```
+
+### Pending Test Cases
+
+When you're not sure how to write the assertion for a test case, you can leave it out.  This will show the test as "pending" when run.
+
+```javascript
+it('is a pending test case');
+```
+
+### Specify a Reporter
+
+You just get the dot-matrix reporter by default.  You can specify others with `--reporter foo`.  Add this to the package.json "test" entry.
+
 ### References
 
 * http://www.devthought.com/2012/02/17/npm-tricks/

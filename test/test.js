@@ -11,6 +11,15 @@ describe('some test', function(){
     });
 
     it('should work asynchronously', function (done) {
+        // do some assertions
         done();
+    });
+
+    it('is a pending test case');
+});
+
+describe('some other tests', function () {
+    it('is super awesome', function () {
+
     });
 });
