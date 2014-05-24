@@ -1,1 +1,3 @@
-console.log('yo');
+exports.foo = function () {
+    return 'foo';
+};

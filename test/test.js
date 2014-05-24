@@ -1,4 +1,4 @@
-// var assert = require('assert');
+var app = require('../app');
 
 describe('some test', function(){
     it('should be awesome', function(){
@@ -20,6 +20,18 @@ describe('some test', function(){
 
 describe('some other tests', function () {
     it('is super awesome', function () {
-
+        throw new Error('whoops');
     });
+});
+
+describe.only('test the foo', function () {
+    it('should return foo');
+
+    it('should test other stuff', function () {
+        if (app.foo() !== 'foo') {
+            throw new Error('not the foo');
+        }
+    });
+
+    it.only('has a big butt');
 });
