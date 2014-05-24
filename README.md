@@ -106,6 +106,8 @@ test:
 .PHONY: test
 ```
 
+From the terminal, you can now run `make test` and it will run the "recipe" specified above.  For that matter, you can just run `make` since it's the only thing in there.  [(make ref)](http://www.gnu.org/software/make/manual/make.html)
+
 ### References
 
 * http://www.devthought.com/2012/02/17/npm-tricks/
