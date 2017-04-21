@@ -1,6 +1,6 @@
 # Learn Mocha
 
-This is a simple project to learn about [Mocha](http://visionmedia.github.io/mocha/).
+This is a simple project to learn about [Mocha](http://mochajs.org/).
 
 ## Notes
 
@@ -24,7 +24,7 @@ Set up an npm script in package.json to test using the installed Mocha.
         "test": "node_modules/.bin/mocha"
     },
 
-Add `test/test.js` to your project.  This is [where Mocha looks for tests](http://visionmedia.github.io/mocha/#best-practices) by default.
+Add `test/test.js` to your project.  This is [where Mocha looks for tests](http://mochajs.org/#the-test-directory) by default.
 
 If no file is specified when calling mocha, all *.js files in the ./test directory will be run.  You can make it search recursively through the test dir with `--recursive`.
 
@@ -36,7 +36,7 @@ This executes the "test" defined in [package.json's "scripts"](https://www.npmjs
 
 ### Writing Tests
 
-This has just wired up Mocha so far, which is the testing framework.  The test(s) need to specify an [assertion library](http://visionmedia.github.io/mocha/#assertions) to use.  You can use [Node's](http://nodejs.org/api/assert.html) or anything else that throws errors (ie. write your own).
+This has just wired up Mocha so far, which is the testing framework.  The test(s) need to specify an [assertion library](http://mochajs.org/#assertions) to use.  You can use [Node's](http://nodejs.org/api/assert.html) or anything else that throws errors (ie. write your own).
 
 
 ### Asynchronous Tests
@@ -111,7 +111,7 @@ From the terminal, you can now run `make test` and it will run the "recipe" spec
 ### References
 
 * http://www.devthought.com/2012/02/17/npm-tricks/
-* http://visionmedia.github.io/mocha/
+* http://mochajs.org/
 * http://www.codeproject.com/Articles/31488/Makefiles-in-Linux-An-Overview#T1
 * http://www.gnu.org/software/make/manual/make.html#Phony-Targets
 * https://www.npmjs.org/doc/misc/npm-scripts.html
